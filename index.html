@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Runner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="phaser.js"></script>
+    <script src="terminado.js"></script>
+    <script src="juego.js"></script>
+    <script src="principal.js"></script>
+</head>
+<body>
+    <div id="bloque_juego"></div>
+    <h2>Carros Locos | Oscar Tintaya</h2>
+
+    <div id="overlay">
+        <button onclick="quitarOverlay()">Comenzar Juego</button>
+    </div>
+
+    <script>
+        function quitarOverlay() {
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("bloque_juego").style.display = "flex";
+        }
+    </script>
+
+
+</body>
+</html>
